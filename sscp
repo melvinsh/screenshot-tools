@@ -1,0 +1,6 @@
+SCREENSHOT_DIR=~/Screenshots
+LATEST=$(ls -1rt $SCREENSHOT_DIR | tail -n 1)
+
+echo $LATEST
+
+cp "$SCREENSHOT_DIR/$LATEST" .
